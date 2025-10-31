@@ -1,0 +1,26 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/alabaster_dark.toml"
+]
+
+[env]
+TERM = "screen-256color"
+
+[font]
+normal = {family = "Iosevka Nerd Font", style = "Medium"}
+size = 9
+
+[window]
+title = "Alacritty"
+dynamic_title = true
+padding.x = 3
+
+[cursor]
+style = {shape = "Block", blinking = "Always"}
+blink_interval = 500
+
+[mouse]
+hide_when_typing = true
+
+[colors.primary]
+background = "#000000"
