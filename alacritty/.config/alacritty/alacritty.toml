@@ -7,20 +7,22 @@ import = [
 TERM = "screen-256color"
 
 [font]
-normal = {family = "Iosevka Nerd Font", style = "Medium"}
+normal = {family = "Iosevka Nerd Font", style = "Regular"}
 size = 9
 
 [window]
-title = "Alacritty"
 dynamic_title = true
 padding.x = 3
 
 [cursor]
+thickness = 1.0
 style = {shape = "Block", blinking = "Always"}
-blink_interval = 500
+blink_interval = 450
 
 [mouse]
 hide_when_typing = true
 
-[colors.primary]
-background = "#000000"
+[colors]
+# background = "#000000"
+# cursor = { text  = "#FFFFFF", cursor = "#00FF00" }
+cursor = { text  = "#000000", cursor = "#FFFFFF" }

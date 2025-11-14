@@ -17,7 +17,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="powerlevel10k/powerlevel10k"
-PS1="[%F{white}%n@%F{white}%m%f:%F{white} %1~%f] %F{white}$ "
+PS1="[%F{white}%n@%F{red}%m%f:%F{white} %1~%f] %F{white}$ "
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -113,8 +113,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ls="exa"
 alias f="fastfetch"
 alias night="redshift -O 4500"
+alias day="redshift -x"
+alias ll="ls -la"
 
 eval $(thefuck --alias)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

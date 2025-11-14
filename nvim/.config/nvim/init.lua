@@ -7,8 +7,6 @@ vim.cmd("set expandtab")
 vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 
-vim.cmd("colorscheme gruber-darker")
-
 vim.opt.termguicolors = true
 vim.opt.undofile = true
 vim.opt.number = true
@@ -18,13 +16,13 @@ vim.opt.showtabline = 0
 
 vim.g.netrw_banner = 0
 vim.o.clipboard = "unnamedplus"
-vim.o.showmode = false
+vim.o.showmode = true
 
--- Enable break indent
-vim.o.breakindent = true
--- Renders spaces as "·"
-vim.opt.list = true
-vim.opt.listchars = vim.opt.listchars + "space:·"
+-- -- Enable break indent
+-- vim.o.breakindent = true
+-- -- Renders spaces as "·"
+-- vim.opt.list = true
+-- vim.opt.listchars = vim.opt.listchars + "space:·"
 
 vim.opt.splitbelow = true
 vim.opt.splitright = true
@@ -38,7 +36,7 @@ vim.opt.cursorline = true
 -- vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "red" })
 
 vim.o.scrolloff = 8
-vim.o.nuw = 4
+vim.o.nuw = 3
 vim.opt.swapfile = false
 vim.o.termguicolors = true
 vim.opt.colorcolumn = "85"
@@ -64,6 +62,3 @@ vim.keymap.set("n", "=", [[<cmd>vertical resize +5<cr>]])
 vim.keymap.set("n", "-", [[<cmd>vertical resize -5<cr>]])
 vim.keymap.set("n", "+", [[<cmd>horizontal resize +2<cr>]])
 vim.keymap.set("n", "_", [[<cmd>horizontal resize -2<cr>]])
-
-
--- color scheme
